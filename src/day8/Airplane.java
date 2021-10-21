@@ -16,10 +16,10 @@ public class Airplane {
         this.year=year;
         this.length=length;
         this.weight=weight;
+
     }
     public void info() {
-        StringBuilder str = new StringBuilder();
-        str.append("Producer is " + producer);
+
 
         System.out.println("Producer is " + producer);
         System.out.println("Year of produced is "+ year);
@@ -31,5 +31,15 @@ public class Airplane {
         this.fuel = fuel;
         return fuel;
     }
+    public String toString(){
+        StringBuilder str = new StringBuilder();
+        str.append("Producer is " + producer);
+        str.append(" Year of produced is "+ year);
+        str.append(" Length is "+ length);
+        str.append(" Weight is "+ weight);
+        str.append(" Amount of fuel is "+ fuel);
+        return str.toString();
+    }
+
 
 }
